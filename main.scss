@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Suez+One&display=swap');
 
 $linear-gradient: #d90646, #eb3f2d;
 
@@ -158,6 +158,64 @@ header {
 
         .dot { 
             color: #de173f;
+        }
+    }
+
+    .review { 
+        border: 1px solid #e0e0e0;    
+        width: 340px;
+        color: #808080;
+        font-size: 18px;
+        padding: 25px;
+        position: relative;
+        box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.2);
+
+        &.main { 
+            top: -30px;
+            border: 0;
+
+            &::after { 
+                border: none;
+            }
+        }
+
+        .website {
+            color: #dd1440;
+            font-weight: 600;    
+        }
+
+        &::after { 
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            position: absolute;
+            bottom: -8px;
+            left: 20px;
+            transform: rotate(45deg);
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+    }
+
+    .author { 
+        margin-top: 35px;
+        img { 
+            margin-right: 17px;
+            float: left;
+        }
+
+        .name { 
+            margin-top: 5px;
+            color: #363636;
+            font-size: 18px;
+            float: left;
+
+            .position { 
+                color: #667386;
+                font-size: 16px;
+            }
         }
     }
 }
