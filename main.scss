@@ -219,3 +219,28 @@ header {
         }
     }
 }
+
+.information { 
+    background: linear-gradient($linear-gradient);
+    position: relative;
+
+    &::after, &::before { 
+        z-index: 0;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    &::after { 
+        height: 130px;
+        bottom: 0;
+    }
+
+    &::before { 
+        height: 85px;
+        top: 0;
+    }
+}
