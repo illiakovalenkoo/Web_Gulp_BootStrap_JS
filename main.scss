@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Suez+One&display=swap');
 
 $linear-gradient: #d90646, #eb3f2d;
+$main-red-color: #d90646;
 
 body { 
     font-family: "Montserrat", sans-serif;
@@ -288,4 +289,47 @@ header {
             }
         }
     }
+}
+
+.overflow-hidden { 
+    overflow: hidden;
+}
+
+#modal-video { 
+    overflow-y: hidden;
+    display: none;
+    &::before { 
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, .9);
+        z-index: 10001;
+    }
+    .close-button { 
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        font-size: 40px;
+        z-index: 10001;
+        cursor: pointer;
+
+        &:hover { 
+            color: $main-red-color;
+        }
+    }
+
+    iframe  { 
+        position: fixed;
+        z-index: 10001;
+        top: 20%;
+        right: 15%;
+        width: 70%;
+        min-width: 60%;
+    }
+
 }
