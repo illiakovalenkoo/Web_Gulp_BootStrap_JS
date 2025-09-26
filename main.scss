@@ -3,6 +3,10 @@
 $linear-gradient: #d90646, #eb3f2d;
 $main-red-color: #d90646;
 
+* { 
+    outline: none;
+}
+
 body { 
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -322,6 +326,7 @@ header {
             color: $main-red-color;
         }
     }
+
     iframe  { 
         position: fixed;
         z-index: 10001;
@@ -329,5 +334,48 @@ header {
         right: 15%;
         width: 70%;
         min-width: 60%;
+    }
+
+}
+
+.subscribe { 
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    
+    h4 { 
+        font-size: 50px;
+        font-weight: 700;
+        color: #363636;
+
+        .dot { 
+            color: $main-red-color;
+        }
+    }
+
+    .info { 
+        color: #808080;
+        margin-top: 50px;
+    }
+
+    input { 
+        margin-top: 40px;
+        background: #f8f8f8;
+        border-radius: 50px;
+        border: 0;
+        padding: 12px 30px;
+        width: 400px;
+        color: #808080;
+    }
+
+    button { 
+        position: relative;
+        left: -50px;
+        padding: 12px 30px;
+        border: 0;
+        background: linear-gradient($linear-gradient);
+        color: #fff;
+        border-radius: 50px;
+         box-shadow: 0px 4px 20px 0px rgba(223, 27, 61, 0.26);
     }
 }
