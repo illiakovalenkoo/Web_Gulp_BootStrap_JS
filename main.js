@@ -5,6 +5,19 @@ function slowScroll(id) {
     return false;
 }
 
+$("#subscribe").on("click", function() { 
+    let email = $("#email").val();
+    email = email.trim();
+    if(email.split("@").length != 2 || email.split(".").length != 2)  { 
+        $("#sub_form label").text("Вы ввели неверный email");
+        $("#sub_form label").fadeIn();
+    }
+
+    setTimeout(function() { 
+        $("#sub_form label").fadeOut()
+    }, 1500);
+});
+
 $('.video-play, #modal-video .close-button').on('click', function() { 
     $("#modal-video").toggle();
     $("body").toggleClass("overflow-hidden");
