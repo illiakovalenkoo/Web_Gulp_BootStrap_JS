@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web developing</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <span class="logo">itProger</span>
+                <ul>
+                    <li><a href="" onclick="return slowScroll('.header-main')">Интро</a></li>
+                    <li><a href="" onclick="return slowScroll('.features')">Возможности</a></li>
+                    <li><a href="" onclick="return slowScroll('.information')">Помощь</a></li>
+                    <li><a href="" onclick="return slowScroll('.subscribe')">Блок</a></li>
+                </ul>
+            </div>
+            <div class="header-main">
+            <div class="info">
+                <h1>Простой, удобный <br>& компактный</h1>
+                <p>Простое приложение HeyU для переписки на всевозможные темы</p> 
+                <button type="button" class="download">Скачать сейчас</button>
+            </div>
+            <div class="image">
+                <img src="/img/iphone-main-image.png" alt="Фото программы">    
+            </div>
+        </div>
+        </div>
+    </header>  
+    <section class="features">
+        <div class="container">
+            <div class="block">
+                <div>
+                    <img src="/img/iphone2.png" alt="Фото программы">
+                </div>
+                <div class="info">
+                    <h2>Простая переписка</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam distinctio vel neque! Dicta possimus voluptatem sint, itaque sunt deserunt blanditiis necessitatibus optio! Animi nisi necessitatibus ut eligendi in. Dignissimos, non!</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="info">
+                    <h2>Будь в курсе всего<span class="dot">.</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam distinctio vel neque! Dicta possimus voluptatem sint, itaque sunt deserunt blanditiis necessitatibus optio! Animi nisi necessitatibus ut eligendi in. Dignissimos, non!</p>
+                </div>
+                <div>
+                    <img src="/img/iphone3.png" alt="Фото программы">
+                </div>  
+            </div>
+        </div>
+    </section>    
+
+    <section class="reviews container">
+        <h3>Что говорят люди<span class="dot">.</span></h3>
+        <div class="flex">
+            <div>
+                <div class="review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio, molestias repudiandae a ipsum ratione sequi possimus temporibus aliquam asperiores soluta neque explicabo excepturi expedita earum eveniet cum unde quasi.</p>
+                    <span class="website">Booking.com</span>
+                </div>
+                <div class="author">
+                    <img src="/img/avtor-1.png" alt="Автор отзыва">
+                    <span class="name">
+                        Джордж Френклин<br>
+                        <span class="position">Глава компании</span>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="review main">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio, molestias repudiandae a ipsum ratione sequi possimus temporibus aliquam asperiores soluta neque explicabo excepturi expedita earum eveniet cum unde quasi.</p>
+                    <span class="website">Airbnb</span>
+                </div>
+                <div class="author">
+                    <img src="/img/avtor-2.png" alt="Автор отзыва">
+                    <span class="name">
+                        Джордж Френклин<br>
+                        <span class="position">Глава компании</span>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio, molestias repudiandae a ipsum ratione sequi possimus temporibus aliquam asperiores soluta neque explicabo excepturi expedita earum eveniet cum unde quasi.</p>
+                    <span class="website">Symu.co</span>
+                </div>
+                <div class="author">
+                    <img src="/img/avtor-1.png" alt="Автор отзыва">
+                    <span class="name">
+                        Джордж Френклин<br>
+                        <span class="position">Глава компании</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="information">
+        <div class="container flex">
+            <div>
+                <div class="block flex">
+                    <div class="info">
+                        <h4>Начни общение</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat expedita eius culpa tempora voluptates? Dolorum rem, officia vero totam esse quidem odit magnam molestias assumenda aliquam, animi error nostrum.</p>
+                    </div>
+                    <div>
+                        <img src="img/icon-mess.png" alt="Начни общение">
+                    </div>
+                </div>
+                <div class="block flex">
+                    <div class="info">
+                        <h4>Соверши звонок</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat expedita eius culpa tempora voluptates? Dolorum rem, officia vero totam esse quidem odit magnam molestias assumenda aliquam, animi error nostrum.</p>
+                    </div>
+                    <div>
+                        <img src="img/icon-phone.png" alt="Начни общение">
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/iphone-presentation.png" alt="фото программы">
+                <div class="video-play">
+                    <img src="img/play-circle.png" alt="Запустить видео">
+                </div>
+            </div>
+            <div>
+                <div class="block flex left-align">
+                    <div>
+                        <img src="img/icon-photo.png" alt="Начни общение">
+                    </div>
+                    <div class="info">
+                        <h4>Сделай фото</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat expedita eius culpa tempora voluptates? Dolorum rem, officia vero totam esse quidem odit magnam molestias assumenda aliquam, animi error nostrum.</p>
+                    </div>
+                </div>
+                <div class="block flex left-align">
+                    <div>
+                        <img src="img/icon-video.png" alt="Начни общение">
+                    </div>
+                    <div class="info">
+                        <h4>Вышли видео</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat expedita eius culpa tempora voluptates? Dolorum rem, officia vero totam esse quidem odit magnam molestias assumenda aliquam, animi error nostrum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe container">
+        <h4>Подпишись на наши обновления<span class="dot">.</span></h4>
+        <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti distinctio temporibus totam ad ea tempore quidem! Similique aliquam odit alias corporis nisi laboriosam commodi quaerat voluptate, assumenda delectus tenetur. Itaque?</p>
+        <form id="sub_form" action="">
+            <input type="email" id="email" placeholder="Ваш email адрес">
+            <button type="button" id="subscribe">Подписаться</button>
+            <label for="email"></label>
+        </form>
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <div class="logo">H</div>
+            <h4>Скачать приложение<span class="dot">.</span></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt similique distinctio delectus, culpa corporis neque ad facere doloremque autem veritatis fugiat sint quasi iusto cupiditate a! Nam, rerum incidunt?</p>
+            <a href=""><img src="img/appstore.png" alt="App Store"></a>
+        </div>
+    </section>
+
+    <footer class="container">
+        <ul>
+            <li><a href="" onclick="return slowScroll('.header-main')">Интро</a></li>
+            <li><a href="" onclick="return slowScroll('.features')">Возможности</a></li>
+            <li><a href="" onclick="return slowScroll('.information')">Помощь</a></li>
+            <li><a href="" onclick="return slowScroll('.subscribe')">Блок</a></li>
+        </ul>
+    </footer>
+
+    <div id="modal-video">
+        <div class="close-button"><i class="fa-solid fa-rectangle-xmark"></i></div>
+        <div class="video-modal">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gDadfh0ZdBM?si=o3Ad9ww-mBD3WfRW" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/main-min.js"></script>
+    <script src="https://kit.fontawesome.com/2fdddf9af1.js" crossorigin="anonymous"></script>
+</body>
+</html>
