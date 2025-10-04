@@ -39,6 +39,22 @@ header {
             font-size: 50px;
         }
 
+        @media(min-width: 1025px) { 
+            .menu { 
+                display: none;
+            }
+        }
+
+        @media(max-width: 1024px) { 
+            ul { 
+                display: none;
+            }
+
+            .menu { 
+                font-size: 35px;
+            }
+        }
+
         ul { 
             list-style: none;
             margin: initial;
@@ -72,11 +88,51 @@ header {
         }
     }
 
+    @media(min-width: 1025px) {
+        .mobile-menu { 
+            display: none!important;
+        }
+    }
+
+    @media(max-width: 1024px) {
+        .mobile-menu { 
+            display: none;
+            text-align: center;
+           
+            li { 
+                margin-bottom: 25px;
+                list-style: none;
+                font-size: 24px;
+            
+                a { 
+                    color: #fff;
+                }
+           }
+        }
+    }
+
 
     .header-main { 
         @extend .flex;
-        
         margin-top: 100px;
+
+        @media(max-width: 1024px) {
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+
+            > div { 
+                width: 100%;
+            }
+
+            .info { 
+                margin-top: 0!important;
+            }
+
+            .image { 
+                margin-top: 80px;
+                text-align: center;
+            }
+        }
 
         .info { 
             margin-top: 20px;
@@ -85,6 +141,24 @@ header {
             h1 { 
                 font-size: 62px;
                 font-weight: 700;
+            }
+
+            @media(max-width: 1210px) and (min-width: 1025px) { 
+                h1 { 
+                    font-size: 40px;
+                }
+            }
+
+            @media(max-width: 700px) and (min-width: 500px) {
+                h1 { 
+                    font-size: 50px;
+                }
+            }
+
+            @media(max-width: 500px) {
+                h1 { 
+                    font-size: 35px;
+                }
             }
 
             .download {
@@ -104,8 +178,19 @@ header {
             }
         }
 
+        @media(min-width: 1310px) { 
+            .image { 
+                max-width: 400px;
+            }
+        }
+
+        @media(max-width: 500px) { 
+            img { 
+                width: 100%;
+            }
+        }
+
         .image { 
-            max-width: 400px;
             z-index: 2;
         }
     }
