@@ -214,13 +214,28 @@ header {
     padding-bottom: 90px;
     border-bottom: 1px solid #e0e0e0;
 
+    img { 
+        width: 100%;
+    }
+
     .block { 
         @extend .flex;
         align-items: center;
         color: #808080;
 
+        @media(max-width: 780px) {
+            flex-wrap: wrap;
+
+            > div { 
+                width: 100%;
+                text-align: center;
+            }
+        }
+
         .info { 
-            max-width: 600px;
+            @media(min-width: 781px) {
+                max-width: 600px;    
+            }
 
             h2 { 
                 font-size: 45px;
