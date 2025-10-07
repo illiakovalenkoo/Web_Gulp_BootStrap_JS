@@ -98,6 +98,10 @@ header {
         .mobile-menu { 
             display: none;
             text-align: center;
+
+            ul { 
+                padding: 0;
+            }
            
             li { 
                 margin-bottom: 25px;
@@ -224,6 +228,12 @@ header {
         color: #808080;
 
         @media(max-width: 780px) {
+            .order-mobile { 
+                order: 2;
+                margin-top: 30px;
+            }
+
+
             flex-wrap: wrap;
 
             > div { 
@@ -253,6 +263,13 @@ header {
 .reviews { 
     margin-top: 100px;
     margin-bottom: 150px;
+
+    @media(max-width: 1201px) {
+        .flex { 
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 
     h3 { 
         text-align: center;
