@@ -5,6 +5,16 @@ function slowScroll(id) {
     return false;
 }
 
+$(".header-top .menu").on("click", function() { 
+    if($("header .mobile-menu").is(":visible")) { 
+        $(this).html('<i class="fa-solid fa-bars"></i>');
+    } else { 
+        $(this).html('<i class="fa-solid fa-rectangle-xmark"></i>');
+    }
+
+    $("header .mobile-menu").slideToggle();
+});
+
 $("#subscribe").on("click", function() { 
     let email = $("#email").val();
     email = email.trim();
