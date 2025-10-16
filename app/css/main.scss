@@ -373,25 +373,38 @@ header {
     background: linear-gradient($linear-gradient);
     position: relative;
 
-    &::after, &::before { 
-        z-index: 0;
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
+    @media(min-width: 1000px) {
+        &::after, &::before { 
+            z-index: 0;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+
+        &::after { 
+            height: 130px;
+            bottom: -1px;
+        }
+
+        &::before { 
+            height: 85px;
+            top: -1px;
+        }
     }
 
-    &::after { 
-        height: 130px;
-        bottom: 0;
-    }
+    @media(max-width: 999px) {
+        > div { 
+            flex-wrap: wrap;
+        }
 
-    &::before { 
-        height: 85px;
-        top: 0;
+        .block { 
+            margin-top: 50px;
+        }
     }
+    
 
     div { 
         z-index: 1;
@@ -406,8 +419,10 @@ header {
             }
         }
 
-        &:first-child {
-            margin-top: 135px;
+        @media(min-width: 1000px)  {
+            &:first-child {
+                margin-top: 135px;
+            }    
         }
 
         h4 { 
@@ -422,6 +437,11 @@ header {
 
     .image { 
         position: relative;
+
+        @media(max-width: 999px) {
+            width: 100%;
+            text-align: center;
+        }
 
         .video-play { 
             position: absolute;
